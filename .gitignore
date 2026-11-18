@@ -1,0 +1,10 @@
+# KiCad local preferences, lock files, backups, and rescue files
+*.kicad_prl
+*.lck
+*-backups/
+*-rescue*
+*-cache.lib
+*.bak
+
+# macOS Finder metadata
+.DS_Store
