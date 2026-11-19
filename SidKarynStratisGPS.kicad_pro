@@ -443,7 +443,7 @@
         "uuid": "b3cb1aa4-1545-45ab-acd1-2d09361767d1"
       }
     ],
-    "used_designators": "#FLG1-4,#PWR1-66,AE1,C1-37,D1,FB1,J1-4,J_DEBUG1,L1,R1-17,SW1,U1-5,Y1",
+    "used_designators": "#FLG1-4,#PWR1-66,AE1,C1-37,D1,FB1,J1-4,J_DEBUG1,L1,R1-17,SW1,U1-6,Y1",
     "variants": []
   },
   "sheets": [
