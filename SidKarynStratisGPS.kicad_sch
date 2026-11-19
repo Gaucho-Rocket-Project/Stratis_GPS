@@ -7719,7 +7719,7 @@
 	)
 	(text "GPS"
 		(exclude_from_sim no)
-		(at 228.346 178.562 0)
+		(at 238.506 178.562 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -7788,6 +7788,18 @@
 			)
 		)
 		(uuid "8c72c573-260e-4ec2-abf7-e16554b6da15")
+	)
+	(text "Passive antenna: Taoglas FXP611.07.0092C\nNo antenna DC bias required."
+		(exclude_from_sim no)
+		(at 204.47 223.52 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+				(thickness 0.1429)
+			)
+			(justify left top)
+		)
+		(uuid "af60c796-6566-4568-803d-da88e670a024")
 	)
 	(text "Power Supply"
 		(exclude_from_sim no)
@@ -8985,7 +8997,7 @@
 	)
 	(polyline
 		(pts
-			(xy 233.68 236.22) (xy 233.68 175.26)
+			(xy 243.84 236.22) (xy 243.84 175.26)
 		)
 		(stroke
 			(width 0.254)
@@ -10405,7 +10417,7 @@
 	)
 	(polyline
 		(pts
-			(xy 149.86 236.22) (xy 233.68 236.22)
+			(xy 149.86 236.22) (xy 243.84 236.22)
 		)
 		(stroke
 			(width 0.254)
@@ -10995,7 +11007,7 @@
 	)
 	(polyline
 		(pts
-			(xy 149.86 175.26) (xy 233.68 175.26)
+			(xy 149.86 175.26) (xy 243.84 175.26)
 		)
 		(stroke
 			(width 0.254)
@@ -22850,8 +22862,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 212.09 212.09 270)
-		(mirror x)
+		(at 212.09 212.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22861,7 +22872,7 @@
 		(dnp no)
 		(uuid "dbbecd6a-3484-4256-8fc1-544d9dff0614")
 		(property "Reference" "J2"
-			(at 214.63 210.312 90)
+			(at 212.09 206.756 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22872,7 +22883,7 @@
 			)
 		)
 		(property "Value" "U.FL GPS Antenna"
-			(at 214.63 212.852 90)
+			(at 212.09 208.788 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
