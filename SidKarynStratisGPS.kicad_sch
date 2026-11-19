@@ -15762,7 +15762,7 @@
 		(dnp no)
 		(uuid "4727bb1e-11da-45d7-acd1-b43ebd1a407b")
 		(property "Reference" "C32"
-			(at 157.988 35.814 0)
+			(at 158.496 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15772,7 +15772,7 @@
 			)
 		)
 		(property "Value" "10 uF"
-			(at 159.258 40.386 0)
+			(at 159.512 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15841,7 +15841,7 @@
 		(dnp no)
 		(uuid "488c18b4-aa6b-4729-9ab2-75c9644b0180")
 		(property "Reference" "C33"
-			(at 169.164 35.814 0)
+			(at 169.672 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15851,7 +15851,7 @@
 			)
 		)
 		(property "Value" "100 nF"
-			(at 171.704 40.386 0)
+			(at 171.45 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
