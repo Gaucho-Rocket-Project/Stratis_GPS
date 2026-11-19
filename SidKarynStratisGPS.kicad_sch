@@ -12772,7 +12772,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 k"
+		(property "Value" "10k"
 			(at 179.578 120.396 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21228,7 +21228,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 k"
+		(property "Value" "10k"
 			(at 193.04 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
