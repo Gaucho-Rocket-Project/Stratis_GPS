@@ -12073,7 +12073,7 @@
 			)
 		)
 	)
-	(global_label "LORA_D101"
+	(global_label "LORA_DI01"
 		(shape input)
 		(at 109.22 242.57 0)
 		(fields_autoplaced yes)
@@ -12085,7 +12085,7 @@
 		)
 		(uuid "75a17e42-e6d7-4e84-a7e2-c801dd3a78d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.7885 242.57 0)
+			(at 120.8873 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
