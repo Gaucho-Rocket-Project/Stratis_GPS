@@ -7789,18 +7789,6 @@
 		)
 		(uuid "8c72c573-260e-4ec2-abf7-e16554b6da15")
 	)
-	(text "Passive antenna: Taoglas FXP611.07.0092C\nNo antenna DC bias required."
-		(exclude_from_sim no)
-		(at 204.47 223.52 0)
-		(effects
-			(font
-				(size 1.143 1.143)
-				(thickness 0.1429)
-			)
-			(justify left top)
-		)
-		(uuid "af60c796-6566-4568-803d-da88e670a024")
-	)
 	(text "Power Supply"
 		(exclude_from_sim no)
 		(at 26.924 16.256 0)
@@ -7825,7 +7813,7 @@
 		)
 		(uuid "b86b5b6e-532a-4f77-be98-d5f12f1b95f0")
 	)
-	(text "SCK = clock from STM32 to device\nMOSI = data from STM32 to device\nMISO = data from device to STM32\nCS = Chip Select: selects which device the STM32 talks to\n\nSPI1 = shared by barometer and IMU\nSPI2 = microSD card only\nSPI4 = LoRa radio only\n\nBARO_CS_N = selects barometer\nIMU_CS_A = selects IMU accelerometer\nIMU_CS_G = selects IMU gyroscope\nSD_CS_N = selects microSD card\nAll chip selects above are active low.\n\nI2C = two-wire communication with GPS\nI2C_SCL = clock from STM32 to GPS\nI2C_SDA = data in both directions"
+	(text "SCK = clock from STM32 to device\nMOSI = data from STM32 to device\nMISO = data from device to STM32\nCS = Chip Select: selects which device the STM32 talks to\n\nSPI1 = shared by barometer and IMU\nSPI2 = microSD card only\nSPI4 = LoRa radio only\n\nBARO_CS_N = selects barometer\nIMU_CS_A = selects IMU accelerometer\nIMU_CS_G = selects IMU gyroscope\nSD_CS_N = selects microSD card\nAll chip selects above are active low.\n\nUART is used for the GPS\nGNSS_TX = GPS transmitting to STM32\nGNSS_RX = GPS recieving from STM32"
 		(exclude_from_sim no)
 		(at 303.784 216.662 0)
 		(effects
@@ -8012,12 +8000,6 @@
 		(uuid "2ee7c66c-daa7-41ae-8fd6-b2e3b2fec94a")
 	)
 	(junction
-		(at 166.37 212.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3080f9cd-b42b-4fb8-a17c-1c6326a68175")
-	)
-	(junction
 		(at 78.74 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8136,12 +8118,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "595359ec-2be7-4e86-be19-85e290a42209")
-	)
-	(junction
-		(at 170.18 209.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65114131-f358-426a-98ca-b870ea41ede7")
 	)
 	(junction
 		(at 100.33 77.47)
@@ -8430,6 +8406,10 @@
 		(uuid "11b3a487-d634-47f9-b922-8cb403b3b72d")
 	)
 	(no_connect
+		(at 109.22 166.37)
+		(uuid "1296881a-2c1f-452e-b998-f1d318969169")
+	)
+	(no_connect
 		(at 109.22 156.21)
 		(uuid "13190fa0-1c34-4f56-be1c-0cb28e3b3c23")
 	)
@@ -8520,10 +8500,6 @@
 	(no_connect
 		(at 109.22 265.43)
 		(uuid "49150dd3-17a3-4dbb-9b8d-ee9402e2f40a")
-	)
-	(no_connect
-		(at 175.26 201.93)
-		(uuid "4a852ba5-c983-4171-bce7-ed86b7fc082e")
 	)
 	(no_connect
 		(at 109.22 209.55)
@@ -8650,6 +8626,10 @@
 		(uuid "81dc144d-e011-4601-9fe4-4fc3e002a829")
 	)
 	(no_connect
+		(at 175.26 209.55)
+		(uuid "8481c0c8-c400-46d9-b28b-9d1ba7dc4150")
+	)
+	(no_connect
 		(at 43.18 148.59)
 		(uuid "8759df3f-9b08-4f25-8de7-ebbc8cc7e0a3")
 	)
@@ -8698,16 +8678,16 @@
 		(uuid "9aba0000-8ce6-4085-9175-149db16b24e1")
 	)
 	(no_connect
+		(at 175.26 212.09)
+		(uuid "9b6436df-d289-4e99-8870-944fbf6e5067")
+	)
+	(no_connect
 		(at 43.18 158.75)
 		(uuid "9ee3a94d-b68a-4021-b1d8-80a9a3e3bd7b")
 	)
 	(no_connect
 		(at 43.18 176.53)
 		(uuid "9fcc96f3-5b89-4100-9aff-83500273186e")
-	)
-	(no_connect
-		(at 109.22 250.19)
-		(uuid "a09781e9-00ef-4ad6-825e-dccf4c198e48")
 	)
 	(no_connect
 		(at 43.18 163.83)
@@ -8786,8 +8766,8 @@
 		(uuid "d30d946e-9e8a-4905-b953-5897587d2250")
 	)
 	(no_connect
-		(at 109.22 252.73)
-		(uuid "d45ac7b0-cc97-4f1d-8b73-edb50ff28060")
+		(at 109.22 163.83)
+		(uuid "d9f9f39c-420b-4d69-908d-577b97a5f231")
 	)
 	(no_connect
 		(at 109.22 217.17)
@@ -8840,10 +8820,6 @@
 	(no_connect
 		(at 109.22 148.59)
 		(uuid "fee8b19e-11d3-4fb3-85c6-b950392c0f36")
-	)
-	(no_connect
-		(at 175.26 204.47)
-		(uuid "ff758b65-bfa7-4d02-a922-bef0bc83419b")
 	)
 	(wire
 		(pts
@@ -9447,16 +9423,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 209.55) (xy 170.18 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43c323da-02ca-4da0-84c6-c6dea2ee4b67")
-	)
-	(wire
-		(pts
 			(xy 198.12 45.72) (xy 205.74 45.72)
 		)
 		(stroke
@@ -9734,16 +9700,6 @@
 			(type default)
 		)
 		(uuid "6665a7ce-f3a4-43ad-8b36-acad7b1b4a82")
-	)
-	(wire
-		(pts
-			(xy 170.18 209.55) (xy 175.26 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a89a1e5-606f-4fe9-9283-86a9ab382852")
 	)
 	(wire
 		(pts
@@ -10497,16 +10453,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 212.09) (xy 166.37 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b86ff3e2-dc25-4ebb-9199-1cb10c071f34")
-	)
-	(wire
-		(pts
 			(xy 76.2 88.9) (xy 76.2 90.17)
 		)
 		(stroke
@@ -10974,16 +10920,6 @@
 			(type default)
 		)
 		(uuid "de1f39ed-fc10-4702-8180-46bc60c0e9c8")
-	)
-	(wire
-		(pts
-			(xy 166.37 212.09) (xy 175.26 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "deb37bdb-a242-49fe-b6d2-202c824b5591")
 	)
 	(wire
 		(pts
@@ -11509,9 +11445,9 @@
 			)
 		)
 	)
-	(global_label "I2C_SDA"
+	(global_label "GNSS_RX"
 		(shape input)
-		(at 163.83 209.55 180)
+		(at 175.26 201.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11521,7 +11457,7 @@
 		)
 		(uuid "1b4441f5-fe95-4291-89b8-f4d97111947f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.2854 209.55 0)
+			(at 164.9534 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12325,30 +12261,6 @@
 			)
 		)
 	)
-	(global_label "I2C_SCL"
-		(shape input)
-		(at 109.22 163.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.143 1.143)
-			)
-			(justify left)
-		)
-		(uuid "9fc7a25d-fea0-4192-a175-354d2901da18")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.7102 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "SWCLK"
 		(shape input)
 		(at 109.22 135.89 0)
@@ -12469,30 +12381,6 @@
 			)
 		)
 	)
-	(global_label "I2C_SDA"
-		(shape input)
-		(at 109.22 166.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.143 1.143)
-			)
-			(justify left)
-		)
-		(uuid "b1fff509-4fc8-4202-a5df-fda690a095ee")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.7646 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "NRST"
 		(shape input)
 		(at 39.37 100.33 90)
@@ -12589,6 +12477,30 @@
 			)
 		)
 	)
+	(global_label "GNSS_TX"
+		(shape input)
+		(at 109.22 252.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left)
+		)
+		(uuid "e217d960-2d8f-49b8-8b2a-bab8a2bb2902")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.2545 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "SPI_SCK"
 		(shape input)
 		(at 109.22 113.03 0)
@@ -12661,9 +12573,9 @@
 			)
 		)
 	)
-	(global_label "I2C_SCL"
+	(global_label "GNSS_TX"
 		(shape input)
-		(at 163.83 212.09 180)
+		(at 175.26 204.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12673,7 +12585,7 @@
 		)
 		(uuid "f267e1e1-ef51-4f46-8daf-d6026ca8abf3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.3398 212.09 0)
+			(at 165.2255 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12685,19 +12597,19 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 170.18 201.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "01b9e481-e3fa-454d-84b2-37906e8e965e")
-		(property "Reference" "#PWR016"
-			(at 170.18 205.74 0)
+	(global_label "GNSS_RX"
+		(shape input)
+		(at 109.22 250.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left)
+		)
+		(uuid "f2d20489-3f4c-4caa-808f-f3a33ac52d3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.5266 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12705,60 +12617,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 170.18 198.374 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 170.18 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "288e4c9b-c048-4939-9767-b4eab7cc7bca")
-		)
-		(instances
-			(project "SidKarynStratisGPS"
-				(path "/b3cb1aa4-1545-45ab-acd1-2d09361767d1"
-					(reference "#PWR016")
-					(unit 1)
-				)
+				(justify left)
 			)
 		)
 	)
@@ -21768,86 +21627,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 166.37 215.9 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c1df6526-06dc-4e15-a1df-91053972f0af")
-		(property "Reference" "R4"
-			(at 168.91 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 162.814 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 164.592 215.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 215.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 166.37 215.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f1eff67-f111-44d2-8b0b-82d38502ff78")
-		)
-		(pin "2"
-			(uuid "ff696d1f-a788-47cb-b60a-7b5733a9380a")
-		)
-		(instances
-			(project "SidKarynStratisGPS"
-				(path "/b3cb1aa4-1545-45ab-acd1-2d09361767d1"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 21.59 24.13 270)
 		(unit 1)
@@ -22543,84 +22322,6 @@
 			(project "SidKarynStratisGPS"
 				(path "/b3cb1aa4-1545-45ab-acd1-2d09361767d1"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 166.37 219.71 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d276c910-1d8a-44f8-a0e4-1be90c4cd8bd")
-		(property "Reference" "#PWR014"
-			(at 166.37 215.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 166.37 223.266 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 166.37 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87c436c7-01fd-4cd7-9570-5de337b3fbdd")
-		)
-		(instances
-			(project "SidKarynStratisGPS"
-				(path "/b3cb1aa4-1545-45ab-acd1-2d09361767d1"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -23610,85 +23311,6 @@
 			(project "SidKarynStratisGPS"
 				(path "/b3cb1aa4-1545-45ab-acd1-2d09361767d1"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 170.18 205.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ecc93639-21a6-480a-9732-1c17fe241d15")
-		(property "Reference" "R9"
-			(at 172.72 205.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 166.624 205.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.402 205.74 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 170.18 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "af61e61b-fd92-43ba-8da2-39b23a54187f")
-		)
-		(pin "2"
-			(uuid "3dda4a5b-f512-4f36-b2ff-21fcbbee9e8e")
-		)
-		(instances
-			(project "SidKarynStratisGPS"
-				(path "/b3cb1aa4-1545-45ab-acd1-2d09361767d1"
-					(reference "R9")
 					(unit 1)
 				)
 			)
