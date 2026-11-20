@@ -22707,6 +22707,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Hirose"
+			(at 212.09 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "U.FL-R-SMT-1(10)"
+			(at 212.09 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5c73e821-1076-4bae-9968-780fbb6b4cce")
 		)
